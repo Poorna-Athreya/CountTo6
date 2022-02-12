@@ -30,11 +30,15 @@
 // let minimum = Math.min(...numbers)
 //     console.log(`The minimum of [${numbers}] is ${minimum}`)
 
-module.exports = function average(...args) {
-    var avg = 0
-        args.forEach( function (value) {
-            avg += value
-        })
-        avg /= args.length
-        return avg
+// module.exports = function average(...args) {
+//     var avg = 0
+//         args.forEach( function (value) {
+//             avg += value
+//         })
+//         avg /= args.length
+//         return avg
+// };
+
+module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
+    return (lowerBound + upperBound) / 2
 };
