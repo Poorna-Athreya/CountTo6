@@ -10,14 +10,18 @@
 //         }, '');
 //         console.log(`[${inputs}] becomes "${result}"`);
 
-const foot = {
-    kick() {
-        this.yelp = 'Ouch!';
+// const foot = {
+//     kick() {
+//         this.yelp = 'Ouch!';
 
-        setImmediate(() => {
-            console.log(this.yelp);
-        });
-    },
-};
+//         setImmediate(() => {
+//             console.log(this.yelp);
+//         });
+//     },
+// };
 
-foot.kick();
+// foot.kick();
+
+const userArray = process.argv.slice(2)
+let   [ , username,email] = userArray
+      console.log(`{ username: '${username}', email: '${email}' }`)
