@@ -39,6 +39,11 @@
 //         return avg
 // };
 
-module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
-    return (lowerBound + upperBound) / 2
-};
+// module.exports = function midpoint(lowerBound = 0, upperBound = 1) {
+//     return (lowerBound + upperBound) / 2
+// };
+
+
+module.exports = function makeImportant(stringInput, exclamations = stringInput.length) {
+    return stringInput + '!'.repeat(exclamations)
+}
