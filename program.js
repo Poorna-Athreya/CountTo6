@@ -22,6 +22,10 @@
 
 // foot.kick();
 
-const userArray = process.argv.slice(2)
-let   [ , username,email] = userArray
-      console.log(`{ username: '${username}', email: '${email}' }`)
+// const userArray = process.argv.slice(2)
+// let   [ , username,email] = userArray
+//       console.log(`{ username: '${username}', email: '${email}' }`)
+
+let numbers = process.argv.splice(2)
+let minimum = Math.min(...numbers)
+    console.log(`The minimum of [${numbers}] is ${minimum}`)
