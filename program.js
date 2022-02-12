@@ -26,6 +26,15 @@
 // let   [ , username,email] = userArray
 //       console.log(`{ username: '${username}', email: '${email}' }`)
 
-let numbers = process.argv.splice(2)
-let minimum = Math.min(...numbers)
-    console.log(`The minimum of [${numbers}] is ${minimum}`)
+// let numbers = process.argv.splice(2)
+// let minimum = Math.min(...numbers)
+//     console.log(`The minimum of [${numbers}] is ${minimum}`)
+
+module.exports = function average(...args) {
+    var avg = 0
+        args.forEach( function (value) {
+            avg += value
+        })
+        avg /= args.length
+        return avg
+};
