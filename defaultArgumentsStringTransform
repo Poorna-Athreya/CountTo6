@@ -1,0 +1,4 @@
+
+module.exports = function makeImportant(stringInput, exclamations = stringInput.length) {
+    return stringInput + '!'.repeat(exclamations)
+}
